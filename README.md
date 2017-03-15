@@ -2,7 +2,7 @@
 Minimal case demonstrating linking problem for case class under certain conditions with Scala.js 2.12.1
 
 EXAMPLE UNDER 2.12.1 (change build.sbt scalaVersion to 2.11.8 and it succeeds)
-
+```
 C:\Workspace\IdeaProjects\Bugs\MissingMethod>sbt clean compile
 [info] Loading project definition from C:\Workspace\IdeaProjects\Bugs\MissingMethod\project
 [info] Updating {file:/C:/Workspace/IdeaProjects/Bugs/MissingMethod/project/}missingmethod-build...
@@ -26,3 +26,4 @@ C:\Workspace\IdeaProjects\Bugs\MissingMethod>sbt ~fastOptJS
 [error]   called from scala.collection.immutable.Range.foreach(scala.Function1)scala.Unit
 [error]   called from java.lang.Long$.StringRadixInfos$lzycompute()scala.scalajs.js.Array
 [error]   called from java.lang.Long$.StringRadixInfos()scala.scalajs.js.Array
+```
